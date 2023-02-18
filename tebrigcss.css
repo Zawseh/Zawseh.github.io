@@ -2,12 +2,12 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: lightgray;
+  background-color: #202020;
 }
 header {
   text-align: center;
-  background-color: #5F5F5F;
-  color: #FFFFFF;
+  background-color: #101010;
+  color: white;
   padding: 10px;
   max-width: auto;
   max-height: 210px
@@ -23,12 +23,12 @@ header {
   height: auto;
 }
 a:link {
-  color: black;
+  color: white;
   background-color: transparent;
   text-decoration: none;
 }
 a:visited {
-  color: black;
+  color: lightgray;
 }
 a:hover {
   color: gray;
@@ -38,14 +38,17 @@ h1 {
   text-align: center;
   margin-bottom: 20px;
   margin: 40px 0;
+  color:white
 }
 h2 {
   font-size: 24px;
   margin-bottom: 20px;
   text-align: center;
+  color:white
 }
 h3 {
   text-align: center;
+  color:white;
 }
 .container {
   display: flex;
@@ -57,8 +60,8 @@ h3 {
   margin: 0 auto;
   padding: 40px;
   text-align: center;
-  background-color: #FFFFFF;
-  box-shadow: 0px 0px 10px #BBBBBB;
+  background-color: #404040;
+  box-shadow: 0px 0px 10px #303030;
 }
 .button {
   background-color: black;
@@ -85,6 +88,7 @@ p {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px;
+  color: white
 }
 .ship {
   width: 400px;
