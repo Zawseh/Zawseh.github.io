@@ -9,6 +9,18 @@ header {
   background-color: #5F5F5F;
   color: #FFFFFF;
   padding: 20px;
+  max-width: auto;
+}
+.logo {
+  position:absolute;
+  top:-20px;
+  right: 30px;
+}
+.logo img {
+  max-height: 150px;
+  max-width: 150px;
+  width: auto;
+  height: auto;
 }
 a:link {
   color: black;
