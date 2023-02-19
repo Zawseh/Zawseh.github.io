@@ -42,13 +42,18 @@ h1 {
 }
 h2 {
   font-size: 24px;
-  margin-bottom: 20px;
   text-align: center;
   color:white
 }
 h3 {
   text-align: center;
   color:white;
+}
+h4 {
+  font-size: 24px;
+  text-align: center;
+  color:white;
+  margin-bottom: 0px;
 }
 .container {
   display: flex;
@@ -63,8 +68,8 @@ h3 {
   background-color: #404040;
   box-shadow: 0px 0px 10px #303030;
 }
-.button {
-  background-color: #0F0F0F;
+button {
+  background-color: transparent;
   border: transparent;
   color: slategray;
   padding: 15px 32px;
@@ -72,6 +77,7 @@ h3 {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  align-items: center;
 }
 .btn:hover {
   background-color: #000000;
