@@ -34,21 +34,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 //     console.error("Error: galleryContainer is null or undefined.");
 // }
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     const menuToggle = document.querySelector('.menu-toggle');
-//     const navLinks = document.querySelector('.nav-links');
-
-//     // Check if menuToggle and navLinks are not null
-//     if (menuToggle && navLinks) {
-//         menuToggle.addEventListener('click', () => {
-//             navLinks.classList.toggle('active');
-//         });
-//     } else {
-//         console.error("Error: menuToggle or navLinks is null or undefined.");
-//     }
-// });
-
-
 // Animation on Scroll
 window.addEventListener('scroll', () => {
     const reveals = document.querySelectorAll('.reveal');
