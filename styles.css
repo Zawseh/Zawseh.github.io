@@ -58,13 +58,18 @@ p {
     transition: top 0.5s;
     height: auto;
 }
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 8px 0; /* Adjust padding for smaller screens */
+        height: 60px; /* Set a specific height for smaller screens */
+    }
+}
 
 .navbar ul {
     list-style: none;
     display: flex;
     justify-content: center;
     padding: 0;
-    margin: 0;
 }
 
 .navbar li {
@@ -134,6 +139,13 @@ p {
     gap: 20px;
     position: relative; /* Keep relative positioning */
     z-index: 1; /* Keep z-index */
+}
+
+/* Adjust for Navbar Overlap */
+@media screen and (max-width: 768px) {
+    #about {
+        padding-top: 12rem; /* Adjust padding for smaller screens */
+    }
 }
 
 /* Services Preview */
@@ -288,14 +300,6 @@ footer {
 }
 
 /* Responsive Design */
-/* @media screen and (max-width: 768px) {
-    .navbar ul {
-        flex-direction: column;
-        align-items: center;
-    }
-} */
-
-
 @media screen and (max-width: 768px) {
     .about-content,
     .services-grid,
@@ -304,59 +308,16 @@ footer {
     .footer-content {
         grid-template-columns: 1fr;
     }
-    
-    .navbar {
-        /* ... (keep your existing navbar styles for smaller screens here) ... */
-        position: relative; /* Changed from fixed to relative */
-        padding: 8px 0; /* Adjust padding for smaller screens */
-        height: 60px; /* Set a specific height for smaller screens */
-        padding-bottom: 15px;
-    }
-    
+
     .navbar ul {
         flex-direction: column;
-        align-items: flex-start; /* Align items to the start of the flex container */
-        padding: 10px;
-        display: none; /* Hide the menu initially */
-        background: #022; /* Same background as the navbar */
-        position: absolute; /* Position it on top of the navbar */
-        width: 100%; /* Full width */
-        top: 100%; /* Directly below the navbar */
-        left: 0;
+        align-items: center;
     }
 
     .navbar li {
-        width: 100%; /* Full width */
-        text-align: left; /* Align text to the left */
         margin-bottom: 1rem;
     }
 
-    .navbar a {
-        display: block; /* Make the links take up the full width of their container */
-        padding: 10px; /* Increase padding */
-        width: 100%;
-        text-align: center;
-    }
-
-    /* Display the hamburger menu icon on smaller screens */
-    .hamburger {
-        display: block;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        cursor: pointer;
-    }
-
-    /* Optional: Add a close button inside the menu */
-    .closebtn {
-        display: block;
-        text-align: right;
-        padding: 10px;
-        cursor: pointer;
-    }
-    #about {
-        padding-top: 12rem; /* Adjust padding for smaller screens */
-    }
     .milestone-timeline,
     .fleet-gallery,
     .community-story {
@@ -364,8 +325,6 @@ footer {
         align-items: center;
     }
 }
-
-
 
 /* Animations */
 @keyframes fadeIn {
