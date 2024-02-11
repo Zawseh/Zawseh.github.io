@@ -84,16 +84,17 @@ document.querySelectorAll('.gallery-item img').forEach(image => {
     });
 });
 
-
 let prevScrollPos = window.scrollY || document.documentElement.scrollTop;
 const navbar = document.getElementById("navbar");
 
 window.addEventListener("scroll", function() {
   let currentScrollPos = window.scrollY || document.documentElement.scrollTop;
+  let navHeight = navbar.offsetHeight; // Get the dynamic height of the navbar
   if (prevScrollPos > currentScrollPos) {
     navbar.style.top = "0"; // Show navbar when scrolling up
   } else {
-    navbar.style.top = "-200px"; // Hide navbar when scrolling down
+    // Hide navbar when scrolling down by setting it to negative of its own height
+    navbar.style.top = `-${navHeight}px`; 
   }
   prevScrollPos = currentScrollPos;
 });
@@ -116,3 +117,10 @@ window.onclick = function(event) {
         }
     }
 }
+
+if (prevScrollPos > currentScrollPos || currentScrollPos < navbarHeight) {
+    navbar.style.top = "0";
+  } else {
+    navbar.style.top = `-${navbarHeight}px`;
+  }
+  
