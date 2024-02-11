@@ -308,14 +308,24 @@ footer {
     .footer-content {
         grid-template-columns: 1fr;
     }
+    
+    .container,
+    .service-section,
+    .testimonial-section,
+    .gallery-section,
+    .footer-section {
+        padding: 0 10px; /* Adjust padding for smaller screens */
+    }
 
     .navbar ul {
         flex-direction: column;
         align-items: center;
+        padding: 0 10px;
     }
 
     .navbar li {
         margin-bottom: 1rem;
+        margin: 5px 0;
     }
 
     .milestone-timeline,
@@ -323,6 +333,22 @@ footer {
     .community-story {
         flex-direction: column;
         align-items: center;
+    }
+
+    .service-item,
+    .testimonial-item,
+    .gallery-item {
+        max-width: calc(100% - 10px); /* Adjust width to prevent overflow */
+    }
+
+    .role-options {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .role-option {
+        max-width: calc(100% - 10px); /* Allows the box to adjust to the container width */
+        margin-bottom: 1rem; /* Adds space between the stacked elements */
     }
 }
 
