@@ -135,13 +135,6 @@ p {
     z-index: 1; /* Keep z-index */
 }
 
-/* Adjust for Navbar Overlap */
-@media screen and (max-width: 768px) {
-    #about {
-        padding-top: 12rem; /* Adjust padding for smaller screens */
-    }
-}
-
 /* Services Preview */
 #services-preview {
     padding: 2rem 0;
