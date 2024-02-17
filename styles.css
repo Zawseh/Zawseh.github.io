@@ -342,6 +342,16 @@ footer {
         max-width: calc(100% - 10px); /* Allows the box to adjust to the container width */
         margin-bottom: 1rem; /* Adds space between the stacked elements */
     }
+    .event {
+        /* Make the event take full width minus padding on small screens */
+        flex-basis: calc(100% - 20px); 
+      }
+    
+    .event-dot {
+        /* Position the dot at the start of the event box */
+        left: 10px; /* Adjust as needed */
+        transform: translateX(0);
+    }
 }
 
 /* Animations */
